@@ -24,10 +24,19 @@ else :
 	print("Result : Fail")
 """
 
+"""
 if sub1<40 or sub2<40 or sub3<40 :
 	print("Result : Fail")
 else :
 	print("Result : Pass")
+"""
+
+if sub1>=40 :
+	if sub2>=40 :
+		if sub3>=40 :
+			print("Result : 'PASS'")
+else :
+	print("Result : 'FAIL'")
 
 
 print("-------------------------------------------")
