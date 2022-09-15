@@ -17,10 +17,17 @@ average = total/3
 print("Total : {}".format(total))
 print("Average : {}".format(average))
 
+"""
 if sub1>=40 and sub2>=40 and sub3>=40 :
 	print("Result : Pass")
 else :
 	print("Result : Fail")
+"""
+
+if sub1<40 or sub2<40 or sub3<40 :
+	print("Result : Fail")
+else :
+	print("Result : Pass")
 
 
 print("-------------------------------------------")
