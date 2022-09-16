@@ -30,4 +30,6 @@ if operator == "+" or operator == "-" or operator == "*" or operator == "/"  or 
 else :
     print("Invalid operators !!")
 
+print("----- Thank for using my calculator -----")
+
 
