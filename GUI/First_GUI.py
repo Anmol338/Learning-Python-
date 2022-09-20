@@ -5,6 +5,7 @@ from tkinter import messagebox
 display = Tk()
 display.title('LogIn')             # Title of the frame
 display.geometry('1000x500+300+150')       # (width x height + x-axis + y-axis)
+# display.attributes('-fullscreen', True)    # Full Screen
 display.configure(bg="#fff")       # background color
 display.resizable(False,False)     # Display Resizeable
 
@@ -21,15 +22,18 @@ def signin():
     if user_name == 'admin' and user_pass == 'password':
         screen = Toplevel(display)
         screen.title("App")
-        screen.geometry('925x500+300+200')
+        # screen.geometry('925x500+300+200')
+        screen.attributes('-fullscreen',True)
         screen.config(bg="white")
 
-        Label(screen,text='Hello World of Python!',bg='#fff',font=('Calibri(Body)',50,'bold')).pack(expand=True)
+        Label(screen,text='Welcome to the world of Python!\n I am Anmol Shrestha.\n Python Programmer',bg='#fff',font=('Calibri(Body)',50,'bold')).pack(expand=True)
 
         screen.mainloop()
 
     elif user_name != 'admin' and user_pass != 'password':
         messagebox.showerror("Invalid","Invalid username or password")
+
+
 
 ## --------- Adding another frame inside primary frame ----- ##
 frame = Frame(display,width=350,height=350,bg="white")
