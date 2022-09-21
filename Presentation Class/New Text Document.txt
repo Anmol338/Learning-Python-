@@ -1,0 +1,72 @@
+append(self, v, /)
+ |      Append new value v to the end of the array.
+ |  
+ |  buffer_info(self, /)
+ |      Return a tuple (address, length) giving the current memory address and the length in items of the buffer used to hold array's contents.
+ |      
+ |      The length should be multiplied by the itemsize attribute to calculate
+ |      the buffer length in bytes.
+ |  
+ |  byteswap(self, /)
+ |      Byteswap all items of the array.
+ |      
+ |      If the items in the array are not 1, 2, 4, or 8 bytes in size, RuntimeError is
+ |      raised.
+ |  
+ |  count(self, v, /)
+ |      Return number of occurrences of v in the array.
+ |  
+ |  extend(self, bb, /)
+ |      Append items to the end of the array.
+ |  
+ |  frombytes(self, buffer, /)
+ |      Appends items from the string, interpreting it as an array of machine values, as if it had been read from a file using the fromfile() method.
+ |  
+ |  fromfile(self, f, n, /)
+ |      Read n objects from the file object f and append them to the end of the array.
+ |  
+ |  fromlist(self, list, /)
+ |      Append items to array from list.
+ |  
+ |  fromunicode(self, ustr, /)
+ |      Extends this array with data from the unicode string ustr.
+ |      
+ |      The array must be a unicode type array; otherwise a ValueError is raised.
+ |      Use array.frombytes(ustr.encode(...)) to append Unicode data to an array of
+ |      some other type.
+ |  
+ |  index(self, v, start=0, stop=9223372036854775807, /)
+ |      Return index of first occurrence of v in the array.
+ |      
+ |      Raise ValueError if the value is not present.
+ |  
+ |  insert(self, i, v, /)
+ |      Insert a new item v into the array before position i.
+ |  
+ |  pop(self, i=-1, /)
+ |      Return the i-th element and delete it from the array.
+ |      
+ |      i defaults to -1.
+ |  
+ |  remove(self, v, /)
+ |      Remove the first occurrence of v in the array.
+ |  
+ |  reverse(self, /)
+ |      Reverse the order of the items in the array.
+ |  
+ |  tobytes(self, /)
+ |      Convert the array to an array of machine values and return the bytes representation.
+ |  
+ |  tofile(self, f, /)
+ |      Write all items (as machine values) to the file object f.
+ |  
+ |  tolist(self, /)
+ |      Convert array to an ordinary list with the same items.
+ |  
+ |  tounicode(self, /)
+ |      Extends this array with data from the unicode string ustr.
+ |      
+ |      Convert the array to a unicode string.  The array must be a unicode type array;
+ |      otherwise a ValueError is raised.  Use array.tobytes().decode() to obtain a
+ |      unicode string from an array of some other type.
+ |  
