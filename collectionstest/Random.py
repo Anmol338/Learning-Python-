@@ -26,3 +26,9 @@ if count > 0:
 
 else:
     print("{} not found".format(tmp))
+
+
+
+##### ----- 21found 2 times in [0,4] indexes ! ----- #####
+
+
