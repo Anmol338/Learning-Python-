@@ -34,5 +34,27 @@ from array import array
 # nums.reverse()  # Reverse the index
 # print(nums)
 
+############## ------- Homework ------ ###########
+
 # Sorting array element (ASC/DESC)
-nums = array('i', [4,5,1,2,6,0])
+nums = array('i', [4,5,1,2,6,0,-1])
+
+##### ----- Ascending order ----- #####
+# for i in range(0, len(nums)):
+#     for j in range(0,len(nums)-1):
+#         if nums[i] < nums[j]:
+#             temp = nums[i]
+#             nums[i] = nums[j]
+#             nums[j] = temp
+#
+# print(nums)
+#
+# ##### ----- Decending order ----- #####
+# for i in range(0, len(nums)):
+#     for j in range(0,len(nums)-1):
+#         if nums[i] > nums[j]:
+#             temp = nums[i]
+#             nums[i] = nums[j]
+#             nums[j] = temp
+#
+# print(nums)
