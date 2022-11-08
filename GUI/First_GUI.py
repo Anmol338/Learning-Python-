@@ -31,7 +31,7 @@ def signin():
         screen.mainloop()
 
     elif user_name != 'admin' and user_pass != 'password':
-        messagebox.showerror("Invalid","Invalid username or password")
+        messagebox.showerror("Invalid", "Invalid username or password")
 
 
 
@@ -45,12 +45,12 @@ head.place(x=100,y=5)
 
 ## ----- Function for username ----- ##
 def on_enter(e):
-    user.delete(0,'end')
+    user.delete(0, 'end')
 
 def on_leave(e):
     name = user.get()
     if name == '':
-        user.insert(0,'Username')
+        user.insert(0, 'Username')
 
 ### ----- Username ----- ###
 user = Entry(frame,width=25,fg='black',border=0,bg='white',font=('Mocrosoft YaHei UI Light',11))
@@ -59,11 +59,11 @@ user.insert(0,'Username')
 user.bind('<FocusIn>',on_enter)
 user.bind('<FocusOut>',on_leave)
 
-Frame(frame,width=300,height=2,bg='black').place(x=25,y=107)
+Frame(frame, width=300, height=2, bg='black').place(x=25, y=107)
 
 ## ----- Function for password ----- ##
 def on_enter(e):
-    password.delete(0,'end')
+    password.delete(0, 'end')
 
 def on_leave(e):
     pas = password.get()
@@ -77,7 +77,7 @@ password.insert(0,'Password')
 password.bind('<FocusIn>',on_enter)
 password.bind('<FocusOut>',on_leave)
 
-Frame(frame,width=300,height=2,bg='black').place(x=25,y=177)
+Frame(frame, width=300, height=2, bg='black').place(x=25, y=177)
 
 
 ## ----- Button ----- ##
